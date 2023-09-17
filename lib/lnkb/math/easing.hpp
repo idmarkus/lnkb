@@ -32,11 +32,7 @@
     {                                                                                                        \
         return (t < static_cast<decltype(t)>(0.5)) ? comp_in(t) : comp_out(t);                               \
     }                                                                                                        \
-    template <meta::Floating T>                                                                              \
-    static constexpr inline T operator()(const T t)                                                          \
-    {                                                                                                        \
-        return inout(t);                                                                                     \
-    }
+    template <meta::Floating T> /*static*/ constexpr inline T operator()(const T t) { return inout(t); }
 
 namespace lnkb::meta // clang-format off
 {
