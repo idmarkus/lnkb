@@ -1,0 +1,3 @@
+# Project exclude paths
+/cmake-build-debug-mygw-clang/
+/cmake-build-debug-mygw-gcc/
