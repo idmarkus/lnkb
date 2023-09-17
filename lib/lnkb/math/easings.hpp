@@ -1,7 +1,10 @@
-//  Easing functions based on AHEasing
 #pragma once
 
-#include "lnkb/math.h"
+#include "lnkb/macro.h"
+#include "lnkb/math/constants.hpp"
+#include "lnkb/math/functions.hpp"
+#include "lnkb/math/numerics.hpp"
+#include "lnkb/meta.h"
 
 #define DEF_EASING(IN_EXPR, OUT_EXPR, COMP_IN_EXPR, COMP_OUT_EXPR)                                           \
     template <meta::Floating T>                                                                              \

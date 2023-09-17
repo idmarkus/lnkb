@@ -4,6 +4,6 @@
 
 #pragma once
 
-#include "meta/concepts.hpp"
-#include "meta/traits.hpp"
-#include "meta/typedefs.hpp"
+#include "lnkb/meta/concepts.hpp"
+#include "lnkb/meta/traits.hpp"
+#include "lnkb/meta/typedefs.hpp"

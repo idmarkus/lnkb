@@ -1,7 +1,7 @@
 #pragma once
 
-#include "functions.hpp"
 #include "lnkb/macro.h"
+#include "lnkb/math/functions.hpp"
 #include "lnkb/meta.h"
 
 #include <limits>

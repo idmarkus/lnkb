@@ -1,6 +1,6 @@
 #pragma once
 
-#include "feature.hpp"
+#include "lnkb/macro/feature.hpp"
 
 #define LNKB_EXPAND(x) x
 

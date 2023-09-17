@@ -14,4 +14,4 @@ endif ()
 
 add_executable(VISLNKB main.cpp)
 
-target_link_libraries(VISLNKB PUBLIC matplot PRIVATE LNKB::LNKB)
+target_link_libraries(VISLNKB PUBLIC matplot PRIVATE lnkb::lnkb)

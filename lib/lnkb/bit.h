@@ -1,3 +1,3 @@
 #pragma once
 
-#include "bit/intrinsics.hpp"
+#include "lnkb/bit/intrinsics.hpp"

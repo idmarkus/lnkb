@@ -1,5 +1,4 @@
-#include "lnkb/ease.hpp"
-
+#include <lnkb.h>
 #include <matplot/matplot.h>
 #include <vector>
 

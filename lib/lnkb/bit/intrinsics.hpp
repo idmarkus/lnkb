@@ -3,7 +3,7 @@
 #include "lnkb/macro.h"
 #include "lnkb/meta.h"
 
-// For now, we only support C++20 + so we can assume <bit> is available
+// For now, we only support > C++20 so we can assume <bit> is available
 // otherwise we could feature test here, and use intrinsics or software
 // #if HAS_FEATURE(lib_bitops)
 
