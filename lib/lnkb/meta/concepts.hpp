@@ -16,6 +16,9 @@ namespace lnkb::meta
     template <typename T> concept NonArithmetic = !Arithmetic<T>;
     template <typename T> concept NonNumeric    = !Numeric<T>;
 
+    template <typename T> concept Trivial     = std::is_trivial_v<T>;
+    template <typename T> concept TrivialCopy = std::is_trivially_copyable_v<T>;
+
     template <class C>
     concept Indexable = requires(C & c, std::size_t i) {
         c[i];
