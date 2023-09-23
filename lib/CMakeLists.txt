@@ -4,8 +4,7 @@ project(LIBLNKB
         VERSION 0.1
         LANGUAGES CXX)
 
-
-find_package(gcem CONFIG REQUIRED)
+include (FetchGCEM)
 
 file(GLOB_RECURSE HEADER_LIST CONFIGURE_DEPENDS "${LIBLNKB_SOURCE_DIR}/lnkb/*.h*")
 file(GLOB_RECURSE SOURCE_LIST CONFIGURE_DEPENDS "${LIBLNKB_SOURCE_DIR}/lnkb/*.c*")
@@ -14,10 +13,17 @@ add_library(LIBLNKB INTERFACE lnkb.h ${SOURCE_LIST} ${HEADER_LIST})
 
 target_include_directories(LIBLNKB INTERFACE "${LIBLINKB_SOURCE_DIR}")
 
-set_target_properties(LIBLNKB PROPERTIES CXX_STANDARD 20)
-set_target_properties(LIBLNKB PROPERTIES CXX_STANDARD_REQUIRED ON)
-set_target_properties(LIBLNKB PROPERTIES CXX_EXTENSIONS OFF)
-set_target_properties(LIBLNKB PROPERTIES USE_FOLDERS ON)
+set_target_properties (
+        LIBLNKB
+        PROPERTIES
+        CXX_STANDARD 20
+        CXX_STANDARD_REQUIRED ON
+        CXX_EXTENSIONS OFF
+        USE_FOLDERS ON
+)
+#set_target_properties(LIBLNKB PROPERTIES )
+#set_target_properties(LIBLNKB PROPERTIES )
+#set_target_properties(LIBLNKB PROPERTIES )
 
 ## Check compiler support for C++23
 #if (MSVC)
@@ -37,6 +43,8 @@ set_target_properties(LIBLNKB PROPERTIES USE_FOLDERS ON)
 #            CXX_EXTENSIONS OFF
 #    )
 #endif ()
+
+
 
 target_link_libraries(
         LIBLNKB
